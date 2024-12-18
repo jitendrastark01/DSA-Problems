@@ -13,16 +13,18 @@ Note: Return -1 if a valid assignment is not possible, and allotment should be i
 
 // JAVA CODE
 
+class Solution {
 
 
-class Solution 
-{
          static boolean isPossible(int arr[],int k,int mid)
 {
+
         int sum=0,student=1;
-        for(int x:arr){
+        for(int x:arr)
+        {
             sum+=x;
-            if(sum>mid){
+            if(sum>mid)
+             {
                 student++;
                 sum=x;
             }
@@ -38,11 +40,17 @@ class Solution
             sum+=x;
             mx=Math.max(mx,x);
         }
+
         int low=mx,high=sum,mid,ans=Integer.MAX_VALUE;
+
         while(low<=high){
+
             mid=(low+high)/2;
+
             if(isPossible(arr,k,mid)){
+
                 high=mid-1;
+
                 ans=Math.min(ans,mid);
             }
             else low=mid+1;
