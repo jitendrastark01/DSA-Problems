@@ -1,7 +1,7 @@
 // JAVA CODE
 
 class Solution {
-    public int kthMissing(int[] arr, int k) {
+    public int kthMissing(int[] arr, int k)  {
         // code here
         
          int lo=0, hi = arr.length-1;
