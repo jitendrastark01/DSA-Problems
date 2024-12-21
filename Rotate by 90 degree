@@ -1,9 +1,11 @@
 // JAVA CODE
 
+**/    Given a square matrix mat[][] of size n x n. The task is to rotate it by 90 degrees in an anti-clockwise direction without using any extra space. **/
 
 class Solution {
     // Function to rotate matrix anticlockwise by 90 degrees.
     static void rotateby90(int mat[][]) {
+
         // code here
         
         
