@@ -11,7 +11,7 @@ class Solution {
             aSet.add(i);
         }
         ArrayList<Integer> res = new ArrayList();
-        for(int i: b){
+        for(int i: b){ 
             if(aSet.contains(i)){
                 res.add(i);
                 aSet.remove(i);
