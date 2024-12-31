@@ -11,8 +11,7 @@ class Solution {
     
       Set<Integer>hst=new HashSet();
       for(int i:arr){
-          hst.add(i);
-          
+          hst.add(i);     
       }
       
       int ans=0;
@@ -25,8 +24,6 @@ class Solution {
           {
               while(hst.contains(tmp))
               {
-                  
-              
               curr++;
               hst.remove(tmp);
               tmp++;
