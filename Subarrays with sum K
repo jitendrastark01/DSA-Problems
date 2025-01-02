@@ -10,7 +10,7 @@ class Solution
     {
         // code here
         
-        int ans=0,currSum=0;
+        int ans=0,currSum=0; 
         
         Map<Integer,Integer> mp=new HashMap();
         
