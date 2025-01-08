@@ -9,9 +9,9 @@ A triangle with three given sides is only possible if sum of any two sides is al
 
 class Solution {
     // Function to count the number of possible triangles.
-    static int countTriangles(int arr[]) {
-        // code here
-        
+    static int countTriangles(int arr[])
+{
+      
         Arrays.sort(arr);
         int ans=0; 
         for(int i=arr.length-1;i>=0;i--){
