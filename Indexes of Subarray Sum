@@ -8,7 +8,7 @@ Note: If no such array is possible then, return [-1].     */
 
 // JAVA CODE
 
-class Solution {
+class Solution { 
     static ArrayList<Integer> subarraySum(int[] arr, int target) {
         
 int currSum=0;
