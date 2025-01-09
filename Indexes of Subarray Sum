@@ -10,7 +10,6 @@ Note: If no such array is possible then, return [-1].     */
 
 class Solution {
     static ArrayList<Integer> subarraySum(int[] arr, int target) {
-        // code here
         
 int currSum=0;
 Map<Integer,Integer>mp=new HashMap();
@@ -34,4 +33,5 @@ return ans;
         
     }
 }
+
 
