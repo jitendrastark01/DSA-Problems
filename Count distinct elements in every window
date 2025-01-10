@@ -4,8 +4,8 @@
 
 
 class Solution {
-    ArrayList<Integer> countDistinct(int arr[], int k) {
-
+    ArrayList<Integer> countDistinct(int arr[], int k)
+{
         ArrayList<Integer> ans=new ArrayList();
         Map<Integer,Integer>mp=new HashMap();
         k--;
