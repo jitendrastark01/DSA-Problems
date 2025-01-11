@@ -12,7 +12,7 @@ class Solution {
             int ch=s.charAt(j)-'a';
             if(freq[ch]>0){
                 ans=Math.max(ans,j-i);
-                while(i<j && s.charAt(i)!=s.charAt(j)){
+                while(i<j && s.charAt(i)!=s.charAt(j)){ 
                     freq[s.charAt(i)-'a']=0;
                     i++;
                     
