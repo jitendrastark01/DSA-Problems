@@ -1,7 +1,7 @@
 //JAVA CODE
 
 class Solution {
-
+ 
     public int maxWater(int arr[]) {
         // Code Here
         
