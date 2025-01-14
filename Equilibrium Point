@@ -1,1 +1,20 @@
-//
+// JAVA CODE
+
+class Solution {
+    public static int findEquilibrium(int arr[]) {
+
+        int totalsum=0;
+        for(int i: arr){
+            totalsum+=i;
+        }
+        int currsum=0;
+        for(int i=0;i<arr.length;i++){
+            if(currsum==totalsum-currsum-arr[i]){
+                return i;
+            }
+            currsum+=arr[i];
+        }
+        return -1;
+        
+    }
+}
