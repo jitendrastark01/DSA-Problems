@@ -7,7 +7,7 @@ class Solution {
         int []res=new int[n];
         for(int i:arr){
             if(i==0){
-                zerocnt++;
+                zerocnt++; 
             }
             else{
                 totalprod*=i;
