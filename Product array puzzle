@@ -1,1 +1,35 @@
 // JAVA CODE
+
+class Solution {
+    public static int[] productExceptSelf(int arr[]) {
+        // code here
+        int n=arr.length,totalprod=1,zerocnt=0;
+        int []res=new int[n];
+        for(int i:arr){
+            if(i==0){
+                zerocnt++;
+            }
+            else{
+                totalprod*=i;
+            }
+        }
+        if(zerocnt>1){
+            return res;
+        }
+        if(zerocnt==1)
+        {
+            for(int i=0;i<n;i++)
+            {
+                if(arr[i]==0){
+                    res[i]=totalprod;
+                }
+            }
+            return res;
+        }
+        for(int i=0;i<n;i++){
+            res[i]=totalprod/arr[i];
+        }
+        
+        return res;
+    }
+}
