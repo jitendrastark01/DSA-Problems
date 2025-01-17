@@ -2,7 +2,7 @@
 
 class Solution {
     public static int[] productExceptSelf(int arr[]) {
-        // code here
+      
         int n=arr.length,totalprod=1,zerocnt=0;
         int []res=new int[n];
         for(int i:arr){
