@@ -3,7 +3,7 @@
 class Solution {
     Node sortedMerge(Node head1, Node head2) {
         
-        Node p1=head1,p2=head2,temp=new Node(-1),head=temp;
+        Node p1=head1,p2=head2,temp=new Node(-1),head=temp; 
         while(p1!=null&& p2!=null){
             if(p1.data<=p2.data){
                 temp.next=p1;
