@@ -12,7 +12,7 @@
             j=Math.min(j,len);
             while(j>0){
                 Node nex=curr.next;
-                if(tmpH==null){
+                if(tmpH==null){ 
                     tmpH=curr;
                     tmpT=curr;
                     
