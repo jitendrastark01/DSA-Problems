@@ -1,6 +1,6 @@
 // JAVA CODE
 
-class Solution {
+ class Solution {
     public static Node reverseKGroup(Node head, int k) {
         // code here
         int len=getLength(head);
