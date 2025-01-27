@@ -7,25 +7,24 @@ class LRUCache {
     LRUCache(int cap) {
         // code here
      cache=new LinkedHashMap();
-     capacity=cap;
-        
-        
+     capacity=cap;         
     }
 
     // Function to return value corresponding to the key.
     public static int get(int key) {
         // your code here
         if(!cache.containsKey(key)){
-            return -1;
-              
+            return -1;      
         }
+
         int val=cache.remove(key);
         cache.put(key,val);
         return val;
     }
 
     // Function for storing key-value pair.
-    public static void put(int key, int value) {
+    public static void put(int key, int value) 
+{
         // your code here
         if(cache.containsKey(key)){
             cache.remove(key);
