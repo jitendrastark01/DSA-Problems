@@ -9,7 +9,7 @@ class LRUCache {
      cache=new LinkedHashMap();
      capacity=cap;         
     }
-
+       
     // Function to return value corresponding to the key.
     public static int get(int key) {
         // your code here
