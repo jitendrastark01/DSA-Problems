@@ -6,7 +6,7 @@ class LRUCache {
         static int capacity;
     LRUCache(int cap) {
         // code here
-     cache=new LinkedHashMap();
+     cache=new LinkedHashMap();  
      capacity=cap;         
     }
        
