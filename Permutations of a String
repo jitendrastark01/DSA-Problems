@@ -14,7 +14,7 @@ class Solution {
             ans.add(curr);
             return;
         }
-        for(int i=0;i<s.length();i++){
+        for(int i=0;i<s.length();i++){ 
             if(!visit[i]){
                 visit[i]=true;
                 makePermutation(s,ans,curr+s.charAt(i),visit);
