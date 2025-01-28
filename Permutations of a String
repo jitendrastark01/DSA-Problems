@@ -7,7 +7,7 @@ class Solution {
         Set<String>ans=new HashSet();
         boolean[] visit=new boolean[s.length()];
         makePermutation(s,ans,"",visit);
-        return new ArrayList(ans);
+        return new ArrayList(ans); 
     }
     static void makePermutation(String s,Set<String> ans,String curr,boolean[] visit){
         if(curr.length()==s.length()){
