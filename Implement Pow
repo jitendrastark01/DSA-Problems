@@ -5,7 +5,7 @@
 class Solution {
     double power(double b, int e) {
         // code here
-        
+          
         double result=Math.pow(b,e);
         return result;
     }
