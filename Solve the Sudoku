@@ -14,7 +14,7 @@ Note: Zeros represent blanks to be filled with numbers 1-9, while non-zero cells
 
 // JAVA CODE
 
-class Solution {
+class Solution {  
     // Function to find a solved Sudoku.
     static void solveSudoku(int[][] mat) {
         // code here
