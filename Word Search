@@ -11,10 +11,8 @@ class Solution {
                     if(check(mat,i,j,0,word,visit))
                     return true;
                 }
-            }
-            
-        } 
-            
+            }         
+        }       
         return false;
     }
     static boolean check(char[][] mat,int i,int j,int ind,String word,boolean[][] visit){
