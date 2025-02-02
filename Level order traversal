@@ -10,7 +10,7 @@ class Solution {
             int size=q.size();
             ArrayList<Integer> level=new ArrayList();   
             while(size-->0){
-                Node tmp=q.poll();
+                Node tmp=q.poll();  
                 level.add(tmp.data);
                 if(tmp.left!=null){  
                     q.add(tmp.left);
