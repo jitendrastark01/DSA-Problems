@@ -12,7 +12,7 @@ class Solution {
             while(size-->0){
                 Node tmp=q.poll();
                 level.add(tmp.data);
-                if(tmp.left!=null){
+                if(tmp.left!=null){  
                     q.add(tmp.left);
                 }
                 if(tmp.right!=null){
