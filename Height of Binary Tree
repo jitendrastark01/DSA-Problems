@@ -7,7 +7,7 @@ class Solution {
         // code here
         
         if(node==null){
-            return -1;
+            return -1;      
         }
         int leftheight=height(node.left);
         int rightheight=height(node.right);
