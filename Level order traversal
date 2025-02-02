@@ -8,7 +8,7 @@ class Solution {
         q.add(root);
         while(!q.isEmpty()){
             int size=q.size();
-            ArrayList<Integer> level=new ArrayList();
+            ArrayList<Integer> level=new ArrayList();   
             while(size-->0){
                 Node tmp=q.poll();
                 level.add(tmp.data);
