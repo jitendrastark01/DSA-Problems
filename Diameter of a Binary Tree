@@ -6,7 +6,7 @@ This path may or may not pass through the root. Your task is to find the diamete
 
 // JAVA code
 
-class Solution {
+class Solution { 
     int ans=0; 
     int diameter(Node root) {
         // Your code here
