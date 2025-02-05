@@ -3,8 +3,7 @@
 Mirror of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged.    */
 
 
-// JAVA CODE
-
+    // JAVA CODE
 
 class Solution { 
     // Function to convert a binary tree into its mirror tree.
