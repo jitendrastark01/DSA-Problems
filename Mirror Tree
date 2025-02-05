@@ -6,7 +6,7 @@ Mirror of a Binary Tree T is another Binary Tree M(T) with left and right childr
 // JAVA CODE
 
 
-class Solution {
+class Solution { 
     // Function to convert a binary tree into its mirror tree.
     void mirror(Node node) {
         // Your code here
