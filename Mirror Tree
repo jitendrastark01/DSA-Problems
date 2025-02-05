@@ -19,7 +19,7 @@ class Solution {
         Node mirrorleft=solve(node.left);
         Node mirrorright=solve(node.right);
         node.left=mirrorright;
-        node.right=mirrorleft;
+        node.right=mirrorleft;  
         return node;
     }
 }
