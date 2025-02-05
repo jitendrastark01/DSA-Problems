@@ -1,0 +1,20 @@
+// JAVA CODE
+
+
+class Solution {
+    // Function to convert a binary tree into its mirror tree.
+    void mirror(Node node) {
+        // Your code here
+        solve(node);
+    }
+    Node solve(Node node){
+        if(node==null){
+            return null;
+        }
+        Node mirrorleft=solve(node.left);
+        Node mirrorright=solve(node.right);
+        node.left=mirrorright;
+        node.right=mirrorleft;
+        return node;
+    }
+}
