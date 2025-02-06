@@ -1,7 +1,7 @@
   // JAVA CODE
 
 
-class Solution {
+class Solution {  
     static int pos;
     public static Node buildTree(int inorder[], int preorder[]) {
 
