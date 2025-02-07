@@ -11,9 +11,10 @@ class Solution {
         }
         
         void solve(Node root,ArrayList<Integer> ans){
+
             if(root==null)
             return;
-            
+        
             solve(root.left,ans);
             ans.add(root.data);
             solve(root.right,ans);
