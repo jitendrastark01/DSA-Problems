@@ -6,7 +6,7 @@ class Solution {
         // Code
         ArrayList<Integer> ans=new ArrayList();
         solve(root,ans);
-        return ans;
+        return ans; 
             
         }
         
