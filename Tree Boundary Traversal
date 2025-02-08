@@ -10,7 +10,7 @@ class Solution {
             ans.add(node.data);
         }
         leftNode(node.left,ans);
-        addLeaves(node,ans);
+        addLeaves(node,ans);  
         rightRevNodes(node.right,ans);
         return ans;   
     }   
