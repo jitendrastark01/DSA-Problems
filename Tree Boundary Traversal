@@ -12,7 +12,7 @@ class Solution {
         leftNode(node.left,ans);
         addLeaves(node,ans);
         rightRevNodes(node.right,ans);
-        return ans;
+        return ans;   
     }   
     void leftNode(Node node,ArrayList<Integer> ans){
         if(node==null){
