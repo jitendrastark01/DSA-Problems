@@ -1,0 +1,28 @@
+// JAVA CODE 
+
+class Solution {
+    
+    private int maxsum;
+    // Function to return maximum path sum from any node in a tree.
+    int findMaxSum(Node node) {
+        // your code goes here
+        maxsum=Integer.MIN_VALUE;
+        calcmax(node);
+        return maxsum;
+        
+    }
+    
+    private int calcmax(Node node){
+        if(node==null)
+return 0;
+
+        int leftmax=Math.max(0,calcmax(node.left));
+        int rightmax=Math.max(0,calcmax(node.right));
+        
+        int currentmax=node.data+leftmax+rightmax;
+        
+        maxsum=Math.max(maxsum,currentmax);
+        
+        return node.data+Math.max(leftmax,rightmax);
+    }
+}
