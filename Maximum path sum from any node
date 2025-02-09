@@ -3,7 +3,7 @@
 class Solution {
     
     private int maxsum;
-    // Function to return maximum path sum from any node in a tree.
+    // Function to return maximum path sum from any node in a tree. 
     int findMaxSum(Node node) {
         // your code goes here
         maxsum=Integer.MIN_VALUE;
