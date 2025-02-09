@@ -11,7 +11,6 @@ class Solution {
         return maxsum;
         
     }
-    
     private int calcmax(Node node){
         if(node==null)
 return 0;
