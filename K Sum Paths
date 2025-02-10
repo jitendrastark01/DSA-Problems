@@ -1,2 +1,29 @@
 // JAVA CODE
 
+class Solution {
+    public int sumK(Node root, int k) {
+        // code here
+        HashMap<Integer, Integer>prefixsum=new HashMap<>();
+        prefixsum.put(0,1);
+        return dfs(root,0,k,prefixsum);
+        
+    }
+     private int dfs(Node node,int currentsum,int k,HashMap<Integer,Integer>prefixsum){
+        if(node==null) return 0;
+        
+           currentsum+=node.data;
+        
+          int count=prefixsum.getOrDefault(currentsum-k,0);
+        
+          prefixsum.put(currentsum,prefixsum.getOrDefault(currentsum,0)+1);
+        
+          count+=dfs(node.left,currentsum,k,prefixsum);
+          count+=dfs(node.right,currentsum,k,prefixsum);
+          
+          prefixsum.put(currentsum,prefixsum.get(currentsum)-1);
+          
+          return count;
+        
+        
+    }
+}
