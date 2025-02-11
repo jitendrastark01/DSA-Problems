@@ -1,0 +1,22 @@
+// JAVA CODE
+
+class Solution {
+    // Function to check whether a Binary Tree is BST or not.
+    
+    private Node prev=null;
+    boolean isBST(Node root) {
+        
+        return inordercheck(root);
+      }
+      private boolean inordercheck(Node node){
+          if(node==null)return true;
+          
+          if(!inordercheck(node.left)) return false;
+          
+          if(prev!=null && node.data<=prev.data) return false;
+          
+          prev=node;
+          
+          return inordercheck(node.right);
+      }
+}
