@@ -2,8 +2,6 @@
 
 class Solution {
     // Return the Kth smallest element in the given BST
-    
-    
     int count=0;
     int result=-1;
     
