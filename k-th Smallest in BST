@@ -6,7 +6,7 @@ class Solution {
     int result=-1;
                                       
     public int kthSmallest(Node root, int k) {
-        // Write your code here  
+        // Write your code here   
         inorder(root,k);
         return result;
     } 
