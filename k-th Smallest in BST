@@ -4,7 +4,7 @@ class Solution {
     // Return the Kth smallest element in the given BST  
     int count=0;
     int result=-1;
-    
+                                      
     public int kthSmallest(Node root, int k) {
         // Write your code here  
         inorder(root,k);
