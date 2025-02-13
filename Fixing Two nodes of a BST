@@ -1,0 +1,38 @@
+// JAVA CODE
+
+class Solution {
+     Node first=null,middle=null,last=null,prev=null;
+        
+    void correctBST(Node root) {
+        // code here.
+        
+       inorder(root);
+       if(first != null && last != null){
+           swap(first,last);
+       }
+       else if(first!=null && middle!=null){
+           swap(first,middle);
+       }
+    }
+    private void inorder(Node root){
+        if(root==null) return;
+        
+        inorder(root.left);
+        if(prev!=null && root.data<prev.data){
+            if(first==null){
+                first=prev;
+                middle=root;
+            }
+            else{
+                last=root;
+            }
+        }
+        prev=root;
+        inorder(root.right);
+    }
+    private void swap(Node a,Node b){
+        int temp=a.data;
+        a.data=b.data;
+        b.data=temp;
+    }
+}
