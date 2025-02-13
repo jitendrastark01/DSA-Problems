@@ -11,7 +11,7 @@ class Solution {
            swap(first,last);
        }
        else if(first!=null && middle!=null){
-           swap(first,middle);
+           swap(first,middle);  
        }
     }
     private void inorder(Node root){
