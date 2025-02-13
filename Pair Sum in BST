@@ -1,0 +1,26 @@
+//JAVA CODE
+
+class Solution {
+    boolean findTarget(Node root, int target) {
+        // Write your code here
+        
+        HashSet<Integer> set=new HashSet<>();
+        return inorder(root,set,target);
+    }
+      private boolean inorder(Node root,HashSet<Integer> set,int target){
+
+        if(root==null) return false;
+    
+        if(inorder(root.left,set,target)) return true;
+        
+        if(set.contains(target-root.data)) return true;
+        
+        set.add(root.data);
+        
+        return inorder(root.right,set,target);
+        
+        
+        
+    }
+    
+}
