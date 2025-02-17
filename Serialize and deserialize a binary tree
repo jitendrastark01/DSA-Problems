@@ -22,7 +22,7 @@ class Tree {
         }
         return list;
         
-    }
+    }  
 
     // Function to deserialize a list and construct the tree.
     public Node deSerialize(ArrayList<Integer> arr) {
