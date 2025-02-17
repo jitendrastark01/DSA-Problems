@@ -1,0 +1,59 @@
+// JAVA CODE
+
+class Tree {
+    // Function to serialize a tree and return a list containing nodes of tree.
+    public ArrayList<Integer> serialize(Node root) {
+        // code here
+        ArrayList<Integer>list=new ArrayList<>();
+        if(root==null) return list;
+        Queue<Node>queue=new LinkedList<>();
+        queue.add(root);
+        
+        while(!queue.isEmpty()){
+            Node curr=queue.poll();
+            if(curr==null){
+                list.add(-1);
+                
+            }else{
+                list.add(curr.data);
+                queue.add(curr.left);
+                queue.add(curr.right);
+            }
+        }
+        return list;
+        
+    }
+
+    // Function to deserialize a list and construct the tree.
+    public Node deSerialize(ArrayList<Integer> arr) {
+        // code here
+        if(arr.isEmpty()) return null;
+        
+        
+        Queue<Node>queue=new LinkedList<>();
+        Node root=new Node(arr.get(0));
+        queue.add(root);
+        
+        int i=1;
+        
+        while(!queue.isEmpty() && i<arr.size()){
+            Node curr=queue.poll();
+            
+            if(arr.get(i)!=-1){
+                curr.left=new Node (arr.get(i));
+                queue.add(curr.left);
+            }
+            i++;
+            if(i<arr.size() && arr.get(i)!=-1){
+                curr.right=new Node(arr.get(i));
+                queue.add(curr.right);
+            }
+            i++;
+        }
+        return root;
+        
+        
+        
+        
+    }
+};
