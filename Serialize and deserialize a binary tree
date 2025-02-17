@@ -15,7 +15,7 @@ class Tree {
                 list.add(-1);
                 
             }else{
-                list.add(curr.data);
+                list.add(curr.data);   
                 queue.add(curr.left);
                 queue.add(curr.right);
             }
