@@ -4,7 +4,7 @@
     class Solution{
     public int[][] kClosest(int[][] points, int k) {
         // Your code here
-        PriorityQueue<int[]> pq=new PriorityQueue<>((a,b) ->
+        PriorityQueue<int[]> pq=new PriorityQueue<>((a,b) ->  
         Integer.compare(distance(b),distance(a)));
         
         for(int[]pt: points){
