@@ -9,7 +9,7 @@
         
         for(int[]pt: points){
             pq.add(pt);
-            if(pq.size()>k){
+            if(pq.size()>k){  
                 pq.poll();
             }
         }
