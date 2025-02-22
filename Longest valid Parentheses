@@ -9,7 +9,7 @@ class Solution {
             if(s.charAt(i)==')' && st.size()>1 && s.charAt(st.peek())=='('){
                 st.pop();
             }
-            else{
+            else{   
                 st.push(i);
             }
         }
