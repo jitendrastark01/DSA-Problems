@@ -11,7 +11,7 @@ class Solution {
             int currheight=(i==n)?0:arr[i];
             while(!stack.isEmpty() && currheight<arr[stack.peek()]){
                 int height=arr[stack.pop()];
-                int width=stack.isEmpty()? i:i-stack.peek()-1;
+                int width=stack.isEmpty()? i:i-stack.peek()-1;  
                 maxarea=Math.max(maxarea,height*width);
             }
             stack.push(i);
