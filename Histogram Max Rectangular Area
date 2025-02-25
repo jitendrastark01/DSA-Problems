@@ -12,7 +12,7 @@ class Solution {
             while(!stack.isEmpty() && currheight<arr[stack.peek()]){
                 int height=arr[stack.pop()];
                 int width=stack.isEmpty()? i:i-stack.peek()-1;  
-                maxarea=Math.max(maxarea,height*width);
+                maxarea=Math.max(maxarea,height*width); 
             }
             stack.push(i);
         }   
