@@ -15,7 +15,7 @@ class Solution {
                 maxarea=Math.max(maxarea,height*width);
             }
             stack.push(i);
-        }
+        }   
         return maxarea;
     }
 }
