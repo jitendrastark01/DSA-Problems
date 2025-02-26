@@ -7,7 +7,7 @@ class Solution {
      int n=arr.length;
      int left[]=new int [n];
      int right[]=new int [n];
-     int ans[]=new int [n+1];   
+     int ans[]=new int [n+1];     
      
      Arrays.fill(left,-1);
      Arrays.fill(right,n);  
