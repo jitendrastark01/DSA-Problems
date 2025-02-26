@@ -11,7 +11,6 @@ class Solution {
      
      Arrays.fill(left,-1);
      Arrays.fill(right,n);  
-     
      Stack<Integer> stack=new Stack<>();
      for(int i=0;i<n;i++){
          while(!stack.isEmpty() && arr[stack.peek()]>=arr[i]){
