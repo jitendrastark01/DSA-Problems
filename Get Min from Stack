@@ -4,7 +4,7 @@
 class Solution {
     int min;
     Stack<Integer>st=new Stack();
-    public Solution() {}
+    public Solution() {}  
 
     // Add an element to the top of Stack
     public void push(int x) {
