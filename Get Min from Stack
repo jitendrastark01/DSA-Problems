@@ -8,7 +8,7 @@ class Solution {
 
     // Add an element to the top of Stack
     public void push(int x) {
-        // code here
+        // code here  
         if(st.isEmpty()){
             min=x;
         }
