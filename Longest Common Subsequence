@@ -7,7 +7,7 @@ class Solution {
          char c2[]=s2.toCharArray();
          int m=s1.length();
          int n=s2.length();
-         int memo[][]=new int[m+1][n+1];
+         int memo[][]=new int[m+1][n+1];  
          for(int[]row:memo)
          Arrays.fill(row,-1);
          int res=subseq(c1,c2,m,n,memo);
