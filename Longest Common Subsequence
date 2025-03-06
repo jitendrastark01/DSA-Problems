@@ -4,7 +4,7 @@ class Solution {
     static int lcs(String s1, String s2) {
         // code here
         char c1[]=s1.toCharArray();
-         char c2[]=s2.toCharArray();
+         char c2[]=s2.toCharArray();   
          int m=s1.length();
          int n=s2.length();
          int memo[][]=new int[m+1][n+1];  
